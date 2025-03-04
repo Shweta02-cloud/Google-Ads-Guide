@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google AdWords Account Setup</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Google AdWords Setup Guide</h1>
+
+        <!-- Progress Bar -->
+        <div class="progress-container">
+            <div class="progress-bar" id="progress-bar"></div>
+        </div>
+
+        <div id="step-container">
+            <div class="step active">
+                <div class="step-card">
+                    <h2>Step 1: Go to Google Ads</h2>
+                    <p>Visit <a href="https://ads.google.com/" target="_blank">Google Ads</a> and click "Start Now".</p>
+                    <button class="next-btn" onclick="nextStep()">Next</button>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-card">
+                    <h2>Step 2: Sign in</h2>
+                    <p>Use your Google account to sign in or create a new one.</p>
+                    <button class="prev-btn" onclick="prevStep()">Previous</button>
+                    <button class="next-btn" onclick="nextStep()">Next</button>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-card">
+                    <h2>Step 3: Set Up Campaign</h2>
+                    <p>Follow the instructions to set up your first ad campaign.</p>
+                    <button class="prev-btn" onclick="prevStep()">Previous</button>
+                    <button class="next-btn" onclick="nextStep()">Next</button>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-card">
+                    <h2>Step 4: Enter Billing Information</h2>
+                    <p>Provide your payment details for billing.</p>
+                    <button class="prev-btn" onclick="prevStep()">Previous</button>
+                    <button class="next-btn" onclick="nextStep()">Next</button>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-card">
+                    <h2>Step 5: Review & Launch</h2>
+                    <p>Review your setup and launch your campaign.</p>
+                    <button class="prev-btn" onclick="prevStep()">Previous</button>
+                    <button class="restart-btn" onclick="restart()">Restart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+ 
+</body>
+</html>
